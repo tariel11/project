@@ -10,25 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
 </head>
 <body>
         <header class="header">
            <div class="container">
-            <!-- <div class="map-bc">
-                <img src="./img/map-bc.png" alt="map-bc">
-            </div> -->
             <div class="main-header">
-                <img src="./img/logo.png" alt="logo" class="logo">
+                <div class="header-logo">
+                    <img src="./img/logo.png" alt="logo" class="logo">
                 <h1 class="heading-primary">Государственная таможенная служба</h1>
-                <div class="header-address">
-                    <p class="header-tel">+996 11111 2222 333</p>
-                    <p class="header-mail">doverie@example.kg</p>
                 </div>
-                <div class="source">
-                    <img src="./img/src-1.png" alt="icon">
-                    <img src="./img/src-2.png" alt="icon">
-                    <img src="./img/src-3.png" alt="icon">
+
+                <div class="header-info">
+                    <div class="header-address">
+                        <p class="header-tel">+996 11111 2222 333</p>
+                        <p class="header-mail">doverie@example.kg</p>
+                    </div>
+                    <div class="source">
+                        <img src="./img/src-1.png" alt="icon">
+                        <img src="./img/src-2.png" alt="icon">
+                        <img src="./img/src-3.png" alt="icon">
+                    </div>
                 </div>
            </div>
 
@@ -82,7 +85,7 @@
                     <h4 class="h4-margin-bt">Калькулятор для расчета таможенных платежей транспортных средств</h4>
                     <form action="#">
                         <input type="text" placeholder="Год выпуска" required>
-                        <div class="test">
+                        <div class="input-wrap">
                             <input type="text" placeholder="Стоимость" required >
                             <input type="text" placeholder="Обьем" required >
                         </div>
@@ -100,17 +103,20 @@
                 <div class="customs-item">
                     <h4>Предварительное информирование</h4>
                     <form action="#" class="radio-form">
-                        <div class="radio-wrap">
-                            <input type="radio">
-                            <input type="radio">
-                            <input type="radio">
-                        </div>
-                        <div class="radio-text">
+                       
+                            <input type="checkbox" id="checbox-1">
+                            <label for="checbox-1">Автодорожный транспорт</label><br>
+                            <input type="checkbox" id="checbox-2">
+                            <label for="checbox-2">Железнодорожный транспорт</label><br>
+                            <input type="checkbox" id="checbox-3">
+                            <label for="checbox-3">Воздушный транспорт</label>
+                        
+                        <!-- <div class="radio-text">
                             <p>Автодорожный транспорт</p>
                             <p>Железнодорожный транспорт</p>
                             <p>Воздушный транспорт</p>
-                        </div>
-                        <button class="btn btn-ask">Получить информацию</button>
+                        </div> -->
+                        <button class="btn btn-ask btn-info">Получить информацию</button>
                     </form>
                 </div>
             </div>
@@ -195,7 +201,7 @@
 
        <footer class="footer">
            <div class="container">
-            <h2 class="customs-title">Сайты государственных органов</h2>
+            <h2 class="customs-title footer-title">Сайты государственных органов</h2>
 
             <div class="country-wrap">
                 <div class="country-item">
